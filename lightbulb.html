@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<title>lightbulb</title>
+<script type="text/javascript">
+function start() {
+    a = 0;
+}
+function swiutch() {
+    if(a == 0){
+        document.getElementById('image').src="l2.png";
+        a = 1;
+    }
+    else{
+        document.getElementById('image').src="l1.png";
+        a = 0;
+    }
+}
+</script>
+<style>
+body {
+    background-color: #f0f7a1;
+}
+</style>
+<body onload="start()">
+Lightbulb
+<br>
+<button type="button" onclick="swiutch()">Switch</button>
+<br>
+<br>
+<img id="image" src="l1.png" width="480" height="640">
+</body>
+</html>
